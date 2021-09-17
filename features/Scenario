@@ -1,0 +1,8 @@
+Feature: App download
+
+	Scenario: Download and check
+		When open https://www.ruby-lang.org/ru/
+		And went to the tab https://www.ruby-lang.org/ru/downloads/
+		And downloaded the last stable release from there
+		And checked that the file is in the correct directory
+		Then Checked that this name of the downloaded file matches the name of the installer file specified on the site
