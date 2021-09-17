@@ -15,10 +15,10 @@ When(/^проверяю (наличие|отсутствие) логина (\w+\
   login_presents = logins_from_site.include?(login)
 
   if login_presents
-    message = "Логин #{login} присутствует в списке пользователей"
+    message = "i.ivanov #{login} присутствует в списке пользователей"
     search_login_in_list ? $logger.info(message) : raise(message)
   else
-    message = "Логин #{login} отсутствует в списке пользователей"
+    message = "f.akelogin #{login} отсутствует в списке пользователей"
     search_login_in_list ? raise(message) : $logger.info(message)
   end
 end
